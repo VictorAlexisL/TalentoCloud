@@ -18,17 +18,21 @@ def calculadora():
 
     if operacao == '1':
       result = num1 + num2
+      print(result)
     elif operacao == '2':
       result = num1 - num2
+      print(result)
     elif operacao == '3':
       result = num1 * num2
+      print(result)
     elif operacao == '4':
       if num2 != 0:
         result = num1 / num2
+        print(result)
       else:
         print("Erro: divisão por zero")
         continue
-
-    print("Resultado:", result)
-
+    else:
+      print("Essa opção não existe!")
+    
 calculadora()
